@@ -1,1 +1,1 @@
-# just-cake
+# Website for "Just Cake" company!
