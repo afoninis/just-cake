@@ -5,14 +5,17 @@ const swiperHeader = new Swiper(".header__swiper", {
     delay: 2500,
     disableOnInteraction: false,
   },
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const swiperShowroom = new Swiper(".showroom__swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
