@@ -2,8 +2,12 @@
 :root {
   --color-pink-light: #f8e3eb;
   --color-rose: #f15488;
+  --color-rose-light: #ff7aa6;
+  --color-irose: #f2c6d5;
   --color-black: #191617;
   --color-black-full: #000000;
+  --color-black-light-1: #2e2e2e;
+  --color-white-full: #ffffff;
   --color-purple: #8f5bff; }
 
 *,
@@ -81,13 +85,16 @@ a {
       color: var(--color-purple); }
   .header__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr;
     align-items: center; }
   .header__left {
     display: grid;
     justify-items: center;
     align-items: center;
-    font-size: 4rem; }
+    font-size: 4rem;
+    width: 100%;
+    height: 100%; }
   .header__text-box {
     margin-top: -10vh; }
   .header__tag {
@@ -100,10 +107,73 @@ a {
   .header__imp {
     color: var(--color-rose);
     font-weight: 700; }
-  .header__description {
+  .header__tagline {
     width: 76%;
     font-size: 1.6rem;
     letter-spacing: 5px;
     font-weight: 400;
     margin-top: 1rem;
     line-height: 1.6; }
+  .header__right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .header__product {
+    margin-top: -10rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .header__swiper {
+    width: 30vw;
+    height: 60%; }
+  .header__slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/header/slider-1.png");
+    background-size: cover;
+    position: relative; }
+    .header__slide-text {
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: 1rem;
+      color: var(--color-white-full);
+      position: absolute;
+      bottom: 8vh; }
+  .header .swiper-button-disabled {
+    color: var(--color-rose-light); }
+  .header .swiper-button-next, .header .swiper-button-prev {
+    color: var(--color-rose);
+    font-weight: 800; }
+  .header .swiper-button-next {
+    position: absolute;
+    right: 5rem; }
+  .header .swiper-button-prev {
+    position: absolute;
+    left: 5rem; }
+  .header .swiper-scrollbar-drag {
+    background-color: var(--color-rose) !important;
+    color: var(--color-rose); }
+  .header__info {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .header__info:last-child {
+      justify-items: end; }
+    .header__info-heading {
+      font-weight: 600; }
+    .header__info-description {
+      color: var(--color-black-light-1);
+      font-weight: 400; }
+    .header__info-imp {
+      color: var(--color-purple);
+      font-weight: 600; }
+    .header__info-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem; }
+    .header__info-price {
+      font-size: 1.8rem; }

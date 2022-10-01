@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
+    <!-- <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8swiper-bundle.min.js"
+    ></script> -->
     <script defer src="./js/script.js"></script>
 
     <title>Just Cake | Mood Improvement Guaranteed!</title>
@@ -52,22 +60,66 @@
             <div class="header__text-box">
               <span class="header__tag"
                 ><img
-                  src="./img/Just Cake!.svg"
+                  src="./img/header/Just Cake!.svg"
                   alt="Just Cake"
                   class="header__img"
               /></span>
               <h2 class="header__heading">
                 Mood Improvement <span class="header__imp">Guaranteed!</span>
               </h2>
-              <p class="header__description">
+              <p class="header__tagline">
                 Every cake that you eat causes an explosion of feelings and a
                 smile.
               </p>
             </div>
           </div>
-          <div class="header__right"></div>
+          <div class="header__right">
+            <div class="header__product">
+              <div class="swiper header__swiper">
+                <div class="swiper-wrapper header__wrapper">
+                  <div class="swiper-slide header__slide">
+                    <span class="header__slide-text">NEW</span>
+                  </div>
+                  <div class="swiper-slide header__slide">
+                    <span class="header__slide-text">NEW</span>
+                  </div>
+                  <div class="swiper-slide header__slide">
+                    <span class="header__slide-text">NEW</span>
+                  </div>
+                  <div class="swiper-slide header__slide">
+                    <span class="header__slide-text">NEW</span>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="header__info">
+                <div class="header__info-left">
+                  <h3 class="header__info-heading">Donut</h3>
+                  <p class="header__info-description">
+                    Strawberry donut - bonus to
+                    <span class="header__info-imp">any order</span>
+                  </p>
+                </div>
+                <div class="header__info-right">
+                  <div class="header__info-price">
+                    <span class="header__info-imp">$263</span>,24
+                  </div>
+                  <!-- <div class="header__info-btn-box"></div> -->
+                  <a href="#" class="btn-box header__info-btn-box">
+                    <span class="btn header__info-btn">Buy</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
   </body>
 </html>
