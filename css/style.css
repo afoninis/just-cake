@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-pink-light: #f8e3eb;
+  --color-rose: #f15488;
+  --color-black: #191617;
+  --color-black-full: #000000;
+  --color-purple: #8f5bff; }
+
 *,
 *::before,
 *::after {
@@ -10,4 +18,92 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #030303; }
+  background: var(--color-pink-light);
+  font-family: "Jost", sans-serif; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+body {
+  color: var(--color-black);
+  font-size: 1.6rem; }
+
+a {
+  color: inherit; }
+
+.u-section {
+  width: 100%;
+  height: 100vh; }
+
+.u-container {
+  width: 140rem;
+  max-width: 140rem;
+  margin: 0 auto; }
+
+.btn {
+  color: var(--color-pink-light);
+  background-color: var(--color-purple);
+  border-radius: 1.5rem;
+  padding: 1rem 3rem; }
+
+.header {
+  padding-top: 10rem;
+  background-image: linear-gradient(to right, rgba(248, 227, 235, 0.95), rgba(248, 227, 235, 0.95)), url("../img/header/bg.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr; }
+  .header__nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo {
+    width: 5rem;
+    transition: all 0.3s; }
+    .header__logo:hover {
+      transform: scale(1.25); }
+  .header__list {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8rem; }
+  .header__link {
+    font-weight: 500;
+    transition: all 0.3s; }
+    .header__link:hover {
+      color: var(--color-purple); }
+  .header__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; }
+  .header__left {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 4rem; }
+  .header__text-box {
+    margin-top: -10vh; }
+  .header__tag {
+    display: inline-block;
+    width: 22rem; }
+  .header__heading {
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--color-black-full); }
+  .header__imp {
+    color: var(--color-rose);
+    font-weight: 700; }
+  .header__description {
+    width: 76%;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 1.6; }
