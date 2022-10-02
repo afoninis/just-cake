@@ -196,9 +196,6 @@
   position: relative;
   &__heading {
     width: 50vw;
-    position: absolute;
-    top: 20vh;
-    z-index: 5;
 
     &--img {
     }
@@ -290,5 +287,61 @@
       &-box {
       }
     }
+  }
+}
+.we-are {
+  position: relative;
+  background-image: url("../img/we-are/bg.jpg");
+  display: grid;
+  justify-items: center;
+
+  &__heading {
+    color: var(--color-wrose);
+    position: absolute;
+    font-size: 5.6rem;
+    letter-spacing: 1.5rem;
+    // letter-spacing: 2rem;
+  }
+  &__content {
+    color: var(--color-wrose);
+    display: grid;
+    align-content: center;
+  }
+  &__item {
+    &:last-child {
+      text-align: right;
+    }
+  }
+  &__subheading {
+    position: relative;
+    font-size: 2.4rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 4vh;
+  }
+  &__item:first-child &__subheading::before,
+  &__item:last-child &__subheading::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    background-color: currentColor;
+    border-radius: $border-radius;
+    bottom: -2vh;
+  }
+  &__item:first-child &__subheading::before {
+    left: 0;
+  }
+  &__item:last-child &__subheading::after {
+    right: 0;
+  }
+  &__description {
+    color: var(--color-pink-light-2);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  &__imp {
+    color: var(--color-rose);
+    font-weight: 700;
+    font-size: 2rem;
   }
 }
