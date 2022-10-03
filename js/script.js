@@ -21,3 +21,25 @@ const swiperShowroom = new Swiper(".showroom__swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const swiperCustomers = new Swiper(".customers__swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  navigation: {
+    nextEl: ".customers__swipe-next",
+    prevEl: ".customers__swipe-back",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

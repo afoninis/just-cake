@@ -17,7 +17,8 @@
   --color-fire: #f15454;
   --color-orange: #ff825b;
   --color-blue-light-1: #5bd8ff;
-  --color-blue-dark-1: #5e5bff; }
+  --color-blue-dark-1: #5e5bff;
+  --swiper-pagination-bullet-horizontal-gap: 0.5rem !important; }
 
 *,
 *::before,
@@ -411,3 +412,64 @@ a {
         font-size: 2.4rem; }
       .advantages .results__item-text {
         font-size: 1.8rem; }
+
+.customers {
+  padding-top: 10vh;
+  position: relative;
+  background: linear-gradient(180deg, #251a2d 0%, rgba(21, 23, 32, 0) 100%), #181619;
+  text-align: center; }
+  .customers__heading {
+    color: var(--color-wpurple);
+    font-size: 3.6rem;
+    margin-bottom: 2vh; }
+  .customers__imp {
+    color: var(--color-rose); }
+  .customers__swiper {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%; }
+    .customers__swiper-box {
+      margin: 0 auto;
+      width: 60%;
+      height: 70%;
+      padding: 1.5rem;
+      border: 5px solid var(--color-white-full);
+      border-radius: 1.5rem; }
+  .customers__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .customers__swiper-controls {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .customers__swiper-controls > * {
+      height: 100%; }
+  .customers__swipe {
+    color: var(--color-purple);
+    font-size: 6.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    align-self: center;
+    z-index: 20; }
+    .customers__swipe-back {
+      margin-left: 22vw; }
+    .customers__swipe-next {
+      margin-right: 22vw; }
+  .customers .swiper-pagination {
+    bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .customers .swiper-pagination-bullet {
+      transform: translateY(50%);
+      width: 1.5rem;
+      height: 1.5rem; }
+      .customers .swiper-pagination-bullet-active {
+        background-color: var(--color-purple); }
+  .customers .swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden; }
