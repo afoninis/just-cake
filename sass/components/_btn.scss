@@ -8,5 +8,12 @@
     outline: none;
     border: none;
     display: inline-block;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
   }
 }

@@ -21,8 +21,8 @@
   </head>
 
   <body>
-    <main class="main">
-      <header class="header u-section">
+    <main id="main" class="main">
+      <header id="header" class="header u-section">
         <nav class="header__nav u-container">
           <a href="./index.html" class="header__logo">
             <img
@@ -34,24 +34,31 @@
 
           <ul class="header__list">
             <li class="header__item">
-              <a href="#" class="header__link">Showroom</a>
+              <a href="#showroom" class="header__link scroll__link">Showroom</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">We Are</a>
+              <a href="#we-are" class="header__link scroll__link">We Are</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Advantages</a>
+              <a href="#advantages" class="header__link scroll__link"
+                >Advantages</a
+              >
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Results</a>
+              <a href="#results" class="header__link scroll__link">Results</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Customers</a>
+              <a href="#customers" class="header__link scroll__link"
+                >Customers</a
+              >
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Brands</a>
+              <a href="#brands" class="header__link scroll__link">Brands</a>
             </li>
-            <a href="#" class="btn-box header__btn-box">
+            <a
+              href="#cta"
+              class="btn-box header__btn-box header__link scroll__link"
+            >
               <span class="btn header__btn">Buy cake</span>
             </a>
           </ul>
@@ -93,7 +100,6 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <!-- <div class="swiper-pagination"></div> -->
                 <div class="swiper-scrollbar"></div>
               </div>
               <div class="header__info">
@@ -108,8 +114,10 @@
                   <div class="header__info-price">
                     <span class="header__info-imp">$263</span>,24
                   </div>
-                  <!-- <div class="header__info-btn-box"></div> -->
-                  <a href="#" class="btn-box header__info-btn-box">
+                  <a
+                    href="#cta"
+                    class="btn-box header__info-btn-box scroll__link"
+                  >
                     <span class="btn header__info-btn">Buy</span>
                   </a>
                 </div>
@@ -118,7 +126,7 @@
           </div>
         </div>
       </header>
-      <section class="showroom u-section">
+      <section id="showroom" class="showroom u-section">
         <h3 class="showroom__heading u-mt-section-heading">
           <img
             class="showroom__heading--img"
@@ -143,7 +151,10 @@
                       <div class="showroom__info-price">
                         <span class="showroom__info-imp">$263</span>,24
                       </div>
-                      <a href="#" class="btn-box showroom__info-btn-box">
+                      <a
+                        href="#cta"
+                        class="btn-box showroom__info-btn-box scroll__link"
+                      >
                         <span class="btn showroom__info-btn">Buy</span>
                       </a>
                     </div>
@@ -165,7 +176,10 @@
                       <div class="showroom__info-price">
                         <span class="showroom__info-imp">$263</span>,24
                       </div>
-                      <a href="#" class="btn-box showroom__info-btn-box">
+                      <a
+                        href="#cta"
+                        class="btn-box showroom__info-btn-box scroll__link"
+                      >
                         <span class="btn showroom__info-btn">Buy</span>
                       </a>
                     </div>
@@ -187,7 +201,10 @@
                       <div class="showroom__info-price">
                         <span class="showroom__info-imp">$263</span>,24
                       </div>
-                      <a href="#" class="btn-box showroom__info-btn-box">
+                      <a
+                        href="#cta"
+                        class="btn-box showroom__info-btn-box scroll__link"
+                      >
                         <span class="btn showroom__info-btn">Buy</span>
                       </a>
                     </div>
@@ -209,7 +226,10 @@
                       <div class="showroom__info-price">
                         <span class="showroom__info-imp">$263</span>,24
                       </div>
-                      <a href="#" class="btn-box showroom__info-btn-box">
+                      <a
+                        href="#cta"
+                        class="btn-box showroom__info-btn-box scroll__link"
+                      >
                         <span class="btn showroom__info-btn">Buy</span>
                       </a>
                     </div>
@@ -222,7 +242,7 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-      <section class="we-are u-section">
+      <section id="we-are" class="we-are u-section">
         <h3 class="we-are__heading u-mt-section-heading">- We Are -</h3>
         <ul class="we-are__content u-container">
           <li class="we-are__item">
@@ -245,7 +265,7 @@
           </li>
         </ul>
       </section>
-      <section class="advantages u-section">
+      <section id="advantages" class="advantages u-section">
         <h3 class="advantages__heading">Our Advantages</h3>
         <ul class="advantages__content u-container">
           <li class="advantages__item">
@@ -332,7 +352,7 @@
             </div>
           </li>
         </ul>
-        <div class="results">
+        <div id="results" class="results">
           <div class="results__note">
             <p class="results__note-left">focus on</p>
             <p class="results__note-right">1</p>
@@ -380,7 +400,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers u-section">
+      <section id="customers" class="customers u-section">
         <h2 class="customers__heading">
           We are proud of <span class="customers__imp">happy customers</span>
         </h2>
@@ -423,8 +443,8 @@
           <p class="customers__swipe customers__swipe-next">&rsaquo;</p>
         </div>
       </section>
-      <section class="cta u-section">
-        <div class="brands">
+      <section id="cta" class="cta u-section">
+        <div id="brands" class="brands">
           <h4 class="brands__heading">We Work With</h4>
           <ul class="brands__list">
             <li class="brands__item">
@@ -559,28 +579,46 @@
             <h4 class="footer__item-heading">Navigation</h4>
             <ul class="footer__item-list footer__item-list-navigation">
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">Home</a>
+                <a class="footer__item--link scroll__link" href="#header"
+                  >Home</a
+                >
               </li>
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">Results</a>
+                <a class="footer__item--link scroll__link" href="#showroom"
+                  >Showroom</a
+                >
               </li>
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">Showroom</a>
+                <a class="footer__item--link scroll__link" href="#we-are"
+                  >We are</a
+                >
               </li>
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">Customers</a>
+                <a class="footer__item--link scroll__link" href="#advantages"
+                  >Advantages</a
+                >
               </li>
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">We are</a>
+                <a class="footer__item--link scroll__link" href="#results"
+                  >Results</a
+                >
               </li>
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">Brands</a>
+                <a class="footer__item--link scroll__link" href="#customers"
+                  >Customers</a
+                >
               </li>
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">Advantages</a>
+                <a class="footer__item--link scroll__link" href="#brands"
+                  >Brands</a
+                >
               </li>
               <li class="footer__item-el">
-                <a class="footer__item--link" href="">Buy cake</a>
+                <a
+                  class="footer__item--link footer__item--link-cake scroll__link"
+                  href="#cta"
+                  >Buy cake</a
+                >
               </li>
             </ul>
           </li>

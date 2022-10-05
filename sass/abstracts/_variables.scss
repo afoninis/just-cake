@@ -29,6 +29,8 @@
     var(--marquee-elements-width) / var(--marquee-elements-displayed)
   );
   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+
+  // --note-height:
 }
 
 $border-radius: 1.5rem;
