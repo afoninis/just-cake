@@ -118,8 +118,8 @@ formCta.addEventListener("click", function (e) {
 });
 
 sectionMain.addEventListener("click", function (e) {
-  e.preventDefault();
   if (!e.target.closest(".scroll__link")) return;
+  e.preventDefault();
   document
     .getElementById(
       e.target.closest(".scroll__link").getAttribute("href").slice(1)
