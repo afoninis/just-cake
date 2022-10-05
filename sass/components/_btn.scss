@@ -3,6 +3,10 @@
   background-color: var(--color-purple);
   border-radius: $border-radius;
   padding: 1rem 3rem;
+
   &-box {
+    outline: none;
+    border: none;
+    display: inline-block;
   }
 }

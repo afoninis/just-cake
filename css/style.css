@@ -5,6 +5,7 @@
   --color-rose-light: #ff7aa6;
   --color-pink-light-1: #c2a9b2;
   --color-pink-light-2: #bd9aa6;
+  --color-pink-light-3: #ebb3cb;
   --color-wrose: #f8e3eb;
   --color-irose: #f2c6d5;
   --color-black: #191617;
@@ -18,7 +19,19 @@
   --color-orange: #ff825b;
   --color-blue-light-1: #5bd8ff;
   --color-blue-dark-1: #5e5bff;
-  --swiper-pagination-bullet-horizontal-gap: 0.5rem !important; }
+  --swiper-pagination-bullet-horizontal-gap: 0.5rem !important;
+  --marquee-elements-width: 99.9vw;
+  --marquee-elements-displayed: 4;
+  --marquee-element-width: calc(
+    var(--marquee-elements-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s); }
+
+@keyframes animMarquee {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-elements) * var(--marquee-element-width))); } }
 
 *,
 *::before,
@@ -44,6 +57,17 @@ a {
 img {
   width: 100%; }
 
+input {
+  outline: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit; }
+
+.hidden {
+  display: none !important; }
+
 body {
   color: var(--color-black);
   font-size: 1.6rem; }
@@ -65,11 +89,24 @@ a {
   margin-top: 20vh;
   z-index: 5; }
 
+.u-mb-sm {
+  margin-bottom: 4vh !important; }
+
+.u-mb-sm-m {
+  margin-bottom: 3vh !important; }
+
+.u-mb-x-sm {
+  margin-bottom: 2vh !important; }
+
 .btn {
   color: var(--color-pink-light);
   background-color: var(--color-purple);
   border-radius: 1.5rem;
   padding: 1rem 3rem; }
+  .btn-box {
+    outline: none;
+    border: none;
+    display: inline-block; }
 
 .header {
   padding-top: 5rem;
@@ -473,3 +510,100 @@ a {
   .customers .swiper-button-disabled {
     opacity: 0;
     visibility: hidden; }
+
+.cta {
+  display: grid;
+  grid-template-rows: 10% 1fr; }
+  .cta .brands {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(180deg, rgba(197, 182, 232, 0.5) 0%, rgba(242, 198, 213, 0.5) 100%), #8f5bff; }
+    .cta .brands__heading {
+      font-size: 4rem;
+      color: var(--color-wpurple);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1; }
+    .cta .brands__list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      animation: animMarquee var(--marquee-animation-duration) linear infinite; }
+    .cta .brands__item {
+      width: var(--marquee-element-width);
+      font-size: 5rem;
+      display: grid;
+      justify-items: center;
+      flex-shrink: 0; }
+      .cta .brands__item i {
+        width: 4rem;
+        color: rgba(0, 0, 0, 0.5); }
+  .cta__wrapper {
+    background-image: url("../img/cta/bg.jpg");
+    background-size: cover; }
+  .cta__content {
+    height: 100%;
+    display: grid;
+    align-content: center; }
+  .cta__heading {
+    font-size: 6rem;
+    margin-bottom: 1vh; }
+  .cta__form {
+    font-size: 1.6rem; }
+    .cta__form label {
+      z-index: 1;
+      letter-spacing: 1px; }
+    .cta__form input {
+      padding: 1.5rem;
+      background-color: var(--color-pink-light-3);
+      border-radius: 1.5rem;
+      padding-left: 2rem;
+      transition: all 0.3s;
+      font-weight: 300; }
+      .cta__form input:focus {
+        box-shadow: 0 0 1rem 1rem rgba(143, 91, 255, 0.25);
+        color: #8f5bff; }
+    .cta__form-field {
+      width: 30%;
+      display: grid;
+      grid-row-gap: 0.5rem;
+      margin-bottom: 1.6vh; }
+      .cta__form-field:last-child {
+        margin-bottom: 4vh; }
+      .cta__form-field input {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12); }
+      .cta__form-field label {
+        font-weight: 500; }
+    .cta__form-opt {
+      cursor: pointer; }
+    .cta__form-imp {
+      color: var(--color-purple); }
+    .cta__form-item {
+      display: flex;
+      align-items: center; }
+      .cta__form-item:not(:last-child) {
+        margin-bottom: 0.5vh; }
+      .cta__form-item-custom label {
+        color: var(--color-purple); }
+    .cta__form-checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1.5rem;
+      margin-right: 0.8rem; }
+      .cta__form-checkbox-custom {
+        border: 3px solid var(--color-purple); }
+      .cta__form-checkbox-agree {
+        border: 3px solid var(--color-black); }
+    .cta__form-custom:checked + .cta__form-checkbox-custom {
+      background-color: var(--color-purple); }
+    .cta__form-agree:checked + .cta__form-checkbox-agree {
+      background-color: var(--color-black); }
+    .cta__form-btn {
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 1px; }

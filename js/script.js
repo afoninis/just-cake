@@ -43,3 +43,43 @@ const swiperCustomers = new Swiper(".customers__swiper", {
     clickable: true,
   },
 });
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+  "--marquee-elements-displayed"
+);
+const marqueeContainer = document.querySelector(".brands__list");
+
+root.style.setProperty("--marquee-elements", marqueeContainer.children.length);
+
+for (let i = 0; i < marqueeElementsDisplayed; i++) {
+  marqueeContainer.appendChild(marqueeContainer.children[i].cloneNode(true));
+}
+
+const chooseEmail = () => {
+  document
+    .querySelector(".cta__form-label--phone")
+    .closest(".cta__form-field")
+    .classList.add("hidden");
+  document
+    .querySelector(".cta__form-label--email")
+    .closest(".cta__form-field")
+    .classList.remove("hidden");
+};
+const choosePhone = () => {
+  document
+    .querySelector(".cta__form-label--phone")
+    .closest(".cta__form-field")
+    .classList.remove("hidden");
+  document
+    .querySelector(".cta__form-label--email")
+    .closest(".cta__form-field")
+    .classList.add("hidden");
+};
+
+const formCta = document.querySelector(".cta__form");
+
+formCta.addEventListener("click", function (e) {
+  if (e.target.dataset.contact === "phone") choosePhone();
+  else if (e.target.dataset.contact === "email") chooseEmail();
+});

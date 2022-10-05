@@ -4,6 +4,7 @@
   --color-rose-light: #ff7aa6;
   --color-pink-light-1: #c2a9b2;
   --color-pink-light-2: #bd9aa6;
+  --color-pink-light-3: #ebb3cb;
   --color-wrose: #f8e3eb;
   --color-irose: #f2c6d5;
   --color-black: #191617;
@@ -19,11 +20,22 @@
   --color-blue-dark-1: #5e5bff;
 
   --swiper-pagination-bullet-horizontal-gap: 0.5rem !important;
+
+  // Marquee
+  // --marquee-elements: 1;
+  --marquee-elements-width: 99.9vw;
+  --marquee-elements-displayed: 4;
+  --marquee-element-width: calc(
+    var(--marquee-elements-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
 
 $border-radius: 1.5rem;
 $mt-section-heading: 20vh;
 
+$color-white-full: #ffffff;
+$color-black-full: #000000;
 $color-rose: #f15488;
 $color-rose-gradient: #ab5aa3;
 $color-purple: #8f5bff;

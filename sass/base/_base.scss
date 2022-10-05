@@ -29,3 +29,16 @@ a {
 img {
   width: 100%;
 }
+
+input {
+  outline: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.hidden {
+  display: none !important;
+}

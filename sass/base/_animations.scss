@@ -1,0 +1,10 @@
+@keyframes animMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marquee-elements) * var(--marquee-element-width))
+    );
+  }
+}
