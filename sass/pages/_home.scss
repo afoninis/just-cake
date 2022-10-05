@@ -828,3 +828,74 @@
     }
   }
 }
+.footer {
+  background-color: var(--color-blpurple);
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10vh 0;
+  }
+  &__item {
+    display: grid;
+    align-content: start;
+    grid-row-gap: 2vh;
+    color: var(--color-wpurple);
+    &-heading {
+      font-size: 2.6rem;
+      color: var(--color-rose);
+    }
+    &-list {
+      font-size: 1.8rem;
+      display: grid;
+      grid-row-gap: 1rem;
+
+      &-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-column-gap: 4rem;
+      }
+      &-contacts {
+        display: inline-block;
+      }
+    }
+    &-wrapper {
+      display: flex;
+      gap: 1.2rem;
+
+      &:hover {
+        color: var(--color-rose-light);
+      }
+    }
+    &-el {
+      display: flex;
+
+      a {
+        display: inline-block;
+      }
+    }
+    &--link {
+      &:hover {
+        color: var(--color-rose-light);
+      }
+    }
+    &-icon {
+    }
+    &-value {
+    }
+  }
+
+  &__copyright-box {
+    display: grid;
+    justify-items: center;
+    padding: 4vh 0;
+    color: var(--color-wrose);
+
+    background-color: var(--color-black-full);
+    &--heading {
+      font-size: 2rem;
+    }
+    &--text {
+      font-size: 1.6rem;
+    }
+  }
+}
