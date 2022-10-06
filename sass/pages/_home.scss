@@ -134,7 +134,7 @@
       grid-template-columns: repeat(2, 1fr);
     }
     @media only screen and (max-width: 800px) {
-      grid-row-gap: 1rem;
+      grid-row-gap: 2rem;
       grid-template-columns: 1fr;
       grid-template-rows: max-content 1fr;
       align-content: center;
@@ -163,6 +163,7 @@
     font-size: 4rem;
     font-weight: 400;
     color: var(--color-black-full);
+    line-height: 1.2;
   }
   &__imp {
     color: var(--color-rose);
@@ -520,6 +521,7 @@
       @media only screen and (max-width: 800px) {
         margin: 2rem 4rem 0.5rem;
         width: auto;
+        font-size: 1.7rem;
       }
     }
     &-bottom {
@@ -654,8 +656,9 @@
       margin-top: 4vh;
     }
     @media only screen and (max-width: 800px) {
-      margin-top: 2vh;
+      margin-top: 4vh;
       font-size: 2.6rem;
+      margin-bottom: 2vh;
     }
   }
   &__content {
@@ -856,7 +859,7 @@
       padding: 4vh 0;
     }
     @media only screen and (max-width: 800px) {
-      padding: 1vh 0;
+      padding: 2vh 0;
     }
 
     &__note {
@@ -866,7 +869,7 @@
       grid-template-columns: repeat(2, max-content);
       border: 2px solid var(--color-blpurple);
       align-self: start;
-      transform: translateY(-65%);
+      transform: translateY(-55%);
 
       &-left {
         background-color: var(--color-blpurple);

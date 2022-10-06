@@ -113,7 +113,7 @@ a {
       padding: 1rem; } }
   @media only screen and (max-width: 400px) {
     .u-container {
-      max-width: 98vw;
+      max-width: 96vw;
       padding: 0; } }
 
 .u-mt-section-heading {
@@ -198,6 +198,10 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); }
+    @media only screen and (max-width: 500px) {
+      .header__burger {
+        width: 4rem;
+        padding: 0; } }
     .header__burger::before, .header__burger::after {
       content: "";
       position: absolute;
@@ -225,6 +229,10 @@ a {
           display: flex;
           justify-content: center;
           align-items: center; } }
+      @media only screen and (max-width: 500px) {
+        .header__burger-box {
+          width: 7rem;
+          height: 7rem; } }
   .header__link {
     font-weight: 500;
     transition: all 0.3s; }
@@ -240,7 +248,7 @@ a {
         grid-template-columns: repeat(2, 1fr); } }
     @media only screen and (max-width: 800px) {
       .header__content {
-        grid-row-gap: 1rem;
+        grid-row-gap: 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         align-content: center; } }
@@ -262,7 +270,8 @@ a {
   .header__heading {
     font-size: 4rem;
     font-weight: 400;
-    color: var(--color-black-full); }
+    color: var(--color-black-full);
+    line-height: 1.2; }
   .header__imp {
     color: var(--color-rose);
     font-weight: 700; }
@@ -295,17 +304,28 @@ a {
       .header__product {
         margin-top: -10vh; } }
   .header__swiper {
-    margin: 0 auto;
-    width: 40vw;
-    height: 60%; }
-    @media only screen and (max-width: 800px) {
+    margin-top: -10rem;
+    width: 32vw;
+    height: 70%; }
+    @media only screen and (max-width: 1000px) {
       .header__swiper {
-        width: 60vw;
-        height: 80%; } }
+        width: 40vw; } }
     @media only screen and (max-width: 700px) {
       .header__swiper {
-        width: 80vw;
+        width: 48vw;
         height: 80%; } }
+    @media only screen and (max-width: 600px) {
+      .header__swiper {
+        width: 56vw;
+        height: 70%; } }
+    @media only screen and (max-width: 500px) {
+      .header__swiper {
+        width: 66vw;
+        height: 70%; } }
+    @media only screen and (max-width: 400px) {
+      .header__swiper {
+        width: 78vw;
+        height: 70%; } }
   .header__wrapper {
     position: relative; }
   .header__slide {
@@ -314,6 +334,7 @@ a {
     display: flex;
     justify-content: center;
     background-image: url("../img/header/slider-1.png");
+    background-position: 50%;
     background-size: cover;
     position: relative; }
     @media only screen and (max-width: 700px) {
@@ -332,30 +353,38 @@ a {
     color: var(--color-rose);
     font-weight: 800;
     height: 10vh !important; }
-    @media only screen and (max-width: 700px) {
-      .header .swiper-button-next, .header .swiper-button-prev {
-        top: 80%;
-        width: 1rem !important; } }
     .header .swiper-button-next::after, .header .swiper-button-prev::after {
       font-size: 5rem !important; }
   .header .swiper-button-next {
     position: absolute;
     right: 5rem !important; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1260px) {
       .header .swiper-button-next {
-        right: 5vw !important; } }
-    @media only screen and (max-width: 700px) {
+        right: 1.5vw !important; } }
+    @media only screen and (max-width: 1000px) {
       .header .swiper-button-next {
-        right: 8vw !important; } }
+        right: 2vw !important; } }
+    @media only screen and (max-width: 600px) {
+      .header .swiper-button-next {
+        right: 3vw !important; } }
+    @media only screen and (max-width: 400px) {
+      .header .swiper-button-next {
+        right: 1.8vw !important; } }
   .header .swiper-button-prev {
     position: absolute;
     left: 5rem !important; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1260px) {
       .header .swiper-button-prev {
-        left: 5vw !important; } }
-    @media only screen and (max-width: 700px) {
+        left: 1.5vw !important; } }
+    @media only screen and (max-width: 1000px) {
       .header .swiper-button-prev {
-        left: 8vw !important; } }
+        left: 2vw !important; } }
+    @media only screen and (max-width: 600px) {
+      .header .swiper-button-prev {
+        left: 3vw !important; } }
+    @media only screen and (max-width: 400px) {
+      .header .swiper-button-prev {
+        left: 1.8vw !important; } }
   .header .swiper-scrollbar-drag {
     background-color: var(--color-rose) !important;
     color: var(--color-rose); }
@@ -522,7 +551,8 @@ a {
       @media only screen and (max-width: 800px) {
         .showroom__info-description {
           margin: 2rem 4rem 0.5rem;
-          width: auto; } }
+          width: auto;
+          font-size: 1.7rem; } }
     .showroom__info-bottom {
       margin: 2rem 4rem 2rem;
       display: grid;
@@ -624,8 +654,9 @@ a {
         margin-top: 4vh; } }
     @media only screen and (max-width: 800px) {
       .advantages__heading {
-        margin-top: 2vh;
-        font-size: 2.6rem; } }
+        margin-top: 4vh;
+        font-size: 2.6rem;
+        margin-bottom: 2vh; } }
   .advantages__content {
     margin: 2vh 0 6vh;
     display: grid;
@@ -720,7 +751,7 @@ a {
     display: grid;
     justify-items: center;
     align-items: center;
-    box-shadow: -31px -26px 28px -5px rgba(0, 0, 0, 0.6) inset;
+    box-shadow: -12px -11px 14px 2px rgba(0, 0, 0, 0.2) inset;
     scroll-margin: 10rem;
     padding: 4vh 0; }
     @media only screen and (max-width: 1440px) {
@@ -731,7 +762,7 @@ a {
         padding: 4vh 0; } }
     @media only screen and (max-width: 800px) {
       .advantages .results {
-        padding: 1vh 0; } }
+        padding: 2vh 0; } }
     .advantages .results__note {
       position: absolute;
       font-size: 2rem;
@@ -739,7 +770,7 @@ a {
       grid-template-columns: repeat(2, max-content);
       border: 2px solid var(--color-blpurple);
       align-self: start;
-      transform: translateY(-65%); }
+      transform: translateY(-55%); }
       .advantages .results__note-left {
         background-color: var(--color-blpurple);
         color: var(--color-wpurple);
@@ -899,6 +930,7 @@ a {
     justify-content: center; }
     .customers .swiper-pagination-bullet {
       transform: translateY(50%);
+      background-color: var(--color-wpurple);
       width: 1.5rem;
       height: 1.5rem; }
       @media only screen and (max-width: 800px) {
