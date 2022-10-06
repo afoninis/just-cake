@@ -23,7 +23,7 @@
 
   // Marquee
   // --marquee-elements: 1;
-  --marquee-elements-width: 99.9vw;
+  // --marquee-elements-width: 99.9vw;
   --marquee-elements-displayed: 4;
   --marquee-element-width: calc(
     var(--marquee-elements-width) / var(--marquee-elements-displayed)
