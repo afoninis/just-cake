@@ -1,4 +1,4 @@
-# <a href="https://afoninis.github.io/just-cake/">Посмотреть</a>
+# <a href="https://steelaura.github.io/just-cake/">Посмотреть</a>
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br /><br />
 
 # Just Cake
