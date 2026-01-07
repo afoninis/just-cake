@@ -1,4 +1,4 @@
-Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)
+Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)<br />
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 # Just Cake
 
