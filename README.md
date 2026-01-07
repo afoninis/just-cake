@@ -36,7 +36,7 @@ Live demo: [GitHub Pages link](https://wishik.github.io/just-cake/)
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/moonimori/just-cake.git
+git clone https://github.com/wishik/just-cake.git
 ```
 
 Open index.html in your browser
