@@ -1,5 +1,3 @@
-# <a href="https://moonimori.github.io/just-cake/">Click to view</a>
-
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br /><br />
 # Just Cake
 
@@ -23,6 +21,8 @@ This project is a static template that includes:
 
 ![Home](./screenshots/home.png)
 ![Contact Form](./screenshots/contact_form.png)
+
+Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)
 
 ## Technologies Used
 
