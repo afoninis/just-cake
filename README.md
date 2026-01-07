@@ -1,8 +1,8 @@
-Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)<br />
+Live demo: [GitHub Pages link](https://wishik.github.io/just-cake/)<br />
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 # Just Cake
 
-![License](https://img.shields.io/github/license/moonimori/just-cake?style=for-the-badge&colorA=90CAF9&colorB=1976D2)
+![License](https://img.shields.io/github/license/wishik/just-cake?style=for-the-badge&colorA=90CAF9&colorB=1976D2)
 
 ## About
 
@@ -22,7 +22,7 @@ This project is a static template that includes:
 ![Home](./screenshots/home.png)
 ![Contact Form](./screenshots/contact_form.png)
 
-Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)
+Live demo: [GitHub Pages link](https://wishik.github.io/just-cake/)
 
 ## Technologies Used
 
