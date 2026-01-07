@@ -1,7 +1,6 @@
 # <a href="https://moonimori.github.io/just-cake/">Click to view</a>
 
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br /><br />
-
 # Just Cake
 
 ![GitHub stars](https://img.shields.io/github/stars/moonimori/just-cake)
