@@ -2,8 +2,7 @@ Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)<br />
 <span>Designed by <a href="https://github.com/empt1nesss">empt1nesss</a></span><br />
 # Just Cake
 
-![GitHub stars](https://img.shields.io/github/stars/moonimori/just-cake)
-![GitHub license](https://img.shields.io/github/license/moonimori/just-cake)
+![License](https://img.shields.io/github/license/moonimori/just-cake?style=for-the-badge&colorA=90CAF9&colorB=1976D2)
 
 ## About
 
