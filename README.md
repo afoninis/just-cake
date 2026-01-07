@@ -41,4 +41,4 @@ git clone https://github.com/moonimori/just-cake.git
 
 Open index.html in your browser
 
-No build tools or frameworks are required — the project runs in any modern browser
+No build tools or frameworks are required - the project runs in any modern browser
