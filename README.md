@@ -28,7 +28,7 @@ Live demo: [GitHub Pages link](https://moonimori.github.io/just-cake/)
 
 - HTML5
 - CSS3 / SCSS
-- JavaScript (Vanilla)
+- JavaScript (Vanilla ES6+)
 - Git & GitHub
 
 ## Installation / Usage
